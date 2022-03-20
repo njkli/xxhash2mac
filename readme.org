@@ -1,0 +1,5 @@
+#+TITLE: Readme
+* xxhash2mac
+Uses XXHash to derive a MAC address
+* Usage
+xxhash2mac [string]

@@ -1,0 +1,21 @@
+name: xxhash2mac
+version: 0.1.0
+
+authors:
+  - Voob of Doom <vod@njk.li>
+
+targets:
+  xxhash2mac:
+    main: src/xxhash2mac.cr
+
+crystal: 1.3.2
+
+license: MIT
+
+dependencies:
+  xx_hash:
+    github: anykeyh/xxHash.cr
+  mac_address:
+    github: automatico/mac-address
+  clim:
+    github: at-grandpa/clim
