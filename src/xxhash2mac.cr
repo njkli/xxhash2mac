@@ -32,11 +32,11 @@ module Xxhash2mac
 
         case mac_addr
         when .multicast?
-          print "unfortunate choice [multicast] - " + mac_addr.hex
+          puts "unfortunate choice [multicast] - " + mac_addr.hex
         when .broadcast?
-          print "unfortunate choice [broadcast] - " + mac_addr.hex
+          puts "unfortunate choice [broadcast] - " + mac_addr.hex
         when .unicast?
-          printf mac_addr.hex
+          print mac_addr.hex
         else
           raise "WTF are we doing in this branch?!"
         end
@@ -45,4 +45,4 @@ module Xxhash2mac
   end
 end
 
-Xxhash2mac::Cli.start(STDIN.tty? ? ARGV : [ STDIN.gets_to_end ])
+Xxhash2mac::Cli.start(STDIN.tty? ? ARGV : [ STDIN.gets_to_end.chomp ])
