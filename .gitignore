@@ -3,5 +3,4 @@
 /bin/
 /.shards/
 /.crystal/
-shard.lock
 *.dwarf

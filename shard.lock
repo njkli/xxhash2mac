@@ -1,0 +1,14 @@
+version: 2.0
+shards:
+  clim:
+    git: https://github.com/at-grandpa/clim.git
+    version: 0.17.1
+
+  mac_address:
+    git: https://github.com/automatico/mac-address.git
+    version: 0.3.1
+
+  xx_hash:
+    git: https://github.com/anykeyh/xxhash.cr.git
+    version: 0.1.0+git.commit.48cba51c7bd5bc3de8c00033f40cdf2347ac9139
+
